@@ -1,0 +1,199 @@
+{
+    // 拡張機能のおすすめを非表示
+    "extensions.ignoreRecommendations": true,
+    // 拡張機能を自動更新
+    "extensions.autoUpdate": true,
+
+    // ファイルの保存時に末尾の空白をトリミング
+    "files.trimTrailingWhitespace": true,
+    // ファイルの保存時に末尾を改行
+    "files.insertFinalNewline": true,
+    // ファイルの保存時に最終行以降をトリミング
+    "files.trimFinalNewlines": true,
+    // Markdown のファイルは行末の空白をトリミングしない
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    // タグ内の記述はフォーマットしない
+    "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p",
+    // head, body, /html タグの前に改行を入れない
+    "html.format.extraLiners": "",
+    // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
+    "html.format.unformatted": null,
+    // 行の文字数制限を無くし自動で改行させない
+    // "html.format.wrapLineLength": 0,
+    // ファイルブラウザに表示しない
+    "files.exclude": {
+        // "**/.sass-cache": true,
+        // "**/node_modules": true,
+        // "**/.git": true,
+        // "**/.svn": true,
+        // "**/.DS_Store": true
+    },
+
+    // ファイルブラウザには表示するが、検索から除外する
+    "search.exclude": {
+        "**/.sass-cache": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        // 例えばキャッシュディレクトリを追加すると、検索で余計なファイルが出てこなくて便利
+        "**/tmp/cache": true
+    },
+
+    //Windows拡大率
+    "window.zoomLevel": 0,
+    // 起動時に前回開いていたワークスペースを開く
+    // "window.restoreWindows":"none",
+    "window.restoreWindows":"folders",
+    //アイコン
+    "vsicons.dontShowNewVersionMessage": true,
+
+    // ペースト時に自動でフォーマット
+    "editor.formatOnPaste": true,
+    // ミニマップの非表示
+    "editor.minimap.enabled": false,
+    // 半角スペースを常に表示
+    "editor.renderWhitespace": "all",
+    // エディターの幅で折り返し
+    "editor.wordWrap": "on",
+	//Ctrl+マウスホイールで拡大縮小
+	"editor.mouseWheelZoom": true,
+	// 行移動時のタグに沿って自動インデント
+    "editor.autoIndent": false,
+	// タブのサイズ変更
+	"editor.tabSize": 4,
+	//インデントのデフォルト値 true:スペース, false:タブ
+	"editor.insertSpaces": false,
+	// ファイルを開くと、そのファイルの内容に基づいて `editor.tabSize` と `editor.insertSpaces` が検出されます。
+	"editor.detectIndentation": false,
+    //エディター
+    "editor.renderLineHighlight": "gutter",
+    // カーソルがにゅるっと点滅する
+    "editor.cursorBlinking": "smooth",
+    // 制御文字を表示する
+    "editor.renderControlCharacters": true,
+    // インデントガイド(インデントに沿って縦線を表示)
+    "editor.renderIndentGuides": true,
+    // 複数箇所を選択するキーをCtrlに変更
+    "editor.multiCursorModifier": "ctrlCmd",
+
+    // ユーザー定義スニペットを表示しない
+	"editor.snippetSuggestions": "top",
+	//入力候補の初期カーソル位置
+	"editor.suggestSelection": "recentlyUsedByPrefix",
+	//<>を枠で囲う
+	"editor.matchBrackets": false,
+	//入力候補をタブで展開
+	"editor.tabCompletion": "off",
+	//IntelliSenseとEnterで確定
+	"editor.acceptSuggestionOnEnter": "on",
+	// 入力候補 ポップアップ説明文
+	"editor.parameterHints.enabled": false,
+	//エディターでCodeLensを表示するかどうかを制御
+	"editor.codeLens": false,
+
+	//入力候補表示非表示
+	// "editor.quickSuggestions": false,
+	// "editor.quickSuggestions": {
+	// 	"comments": false, // コメント内では無効
+	// 	"strings": true, // 文字列内では有効
+	// 	"other": false //  その他の場所で有効
+	// },
+
+	//trueの場合 editor.snippetSuggestions の場所に入力候補のsnippetを表示する
+	"emmet.showSuggestionsAsSnippets": true,
+
+	// 差分を横に並べて表示ではなく行内に表示する
+	"diffEditor.renderSideBySide": false,
+
+    //起動時の初期画面設定 新規ファイル
+    "workbench.startupEditor": "newUntitledFile",
+    //タブの幅制御
+    "workbench.editor.tabSizing": "shrink",
+
+	"workbench.editor.showTabs": true,
+
+
+    //テーマ
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Monokai Operator Mono",
+    "workbench.colorCustomizations": {
+        "[Monokai Operator Mono]": {
+            "editor.background": "#272822",
+            // "editor.selectionBackground": "#203d63",
+            "editor.selectionBackground": "#264977",
+            // "editor.selectionHighlightBackground": "#3B3A32",
+            "editor.selectionHighlightBackground": "#414339",
+            // "editor.selectionHighlightBackground": "#3c5996",
+            "editor.findMatchBackground":"#6C46B3",
+            "editor.findMatchHighlightBackground":"#6C46B3",
+
+            // エクスプローラのリストやツリー
+            // "list.activeSelectionBackground": "#999",
+            // "list.hoverBackground": "#999",
+            // エクスプローラリストホバー
+            "list.hoverBackground": "#3B3A32",
+            // メニューリストホバー
+            "list.activeSelectionBackground": "#414339",
+
+            //ボタン
+            "button.background": "#5c5e56",
+            "button.hoverBackground": "#70726d",
+            //バッジ（検索結果とかで数字が表示されるやつ）の背景色
+            // "badge.background": "#5c5e56",
+
+            //ステータスバー
+            "statusBar.background": "#414339",
+            // "statusBar.foreground": "#999",
+            // "statusBar.noFolderBackground": "#999",
+            "statusBar.debuggingBackground": "#414339",
+            // "statusBar.border": "#999",
+            // "statusBarItem.prominentBackground": "#999",
+
+            // サイドバー
+            // "sideBar.background": "#999",
+            // "sideBar.foreground": "#999",
+            // "sideBar.border": "#999",
+            // "sideBarTitle.foreground": "#999",
+            // "list.invalidItemForeground": "#999",
+
+            // タブ
+            // "editorGroupHeader.tabsBackground": "#999",
+            // "tab.activeBackground": "#999",
+            // "tab.activeForeground": "#999",
+            // "tab.border": "#999",
+            // "tab.activeBorder": "#999",
+            // "tab.inactiveBackground": "#3f383e",
+            "tab.inactiveBackground": "#363035",
+            "tab.inactiveForeground": "#999"
+        }
+    },
+
+    // 機種依存文字をハイライト
+    "todohighlight.keywords": [
+        "Ⅰ", "Ⅱ", "Ⅲ", "Ⅳ", "Ⅴ", "Ⅵ", "Ⅶ", "Ⅷ", "Ⅸ", "Ⅹ", "ⅰ", "ⅱ", "ⅲ", "ⅳ", "ⅴ", "ⅵ", "ⅶ", "ⅷ", "ⅸ", "ⅹ", "①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩", "⑪", "⑫", "⑬", "⑭", "⑮", "⑯", "⑰", "⑱", "⑲", "⑳", "㊤", "㊥", "㊦", "㊧", "㊨", "㍉", "㍍", "㌔", "㌘", "㌧", "㌦", "㍑", "㌫", "㌢", "㎝", "㎏", "㎡", "㏍", "℡", "№", "㍻", "㍼", "㍽", "㍾", "㈱", "㈲", "㈹", "〜", "—", "⺀", "⺁", "⺂", "⺃", "⺄", "⺅", "⺆", "⺇", "⺈", "⺉", "⺊", "⺋", "⺌", "⺍", "⺎", "⺏", "⺐", "⺑", "⺒", "⺓", "⺔", "⺕", "⺖", "⺗", "⺘", "⺙", "⺚", "⺛", "⺜", "⺝", "⺞", "⺟", "⺠", "⺡", "⺢", "⺣", "⺤", "⺥", "⺦", "⺧", "⺨", "⺩", "⺪", "⺫", "⺬", "⺭", "⺮", "⺯", "⺰", "⺱", "⺲", "⺳", "⺴", "⺵", "⺶", "⺷", "⺸", "⺹", "⺺", "⺻", "⺼", "⺽", "⺾", "⺿", "⻀", "⻁", "⻂", "⻃", "⻄", "⻅", "⻆", "⻇", "⻈", "⻉", "⻊", "⻋", "⻌", "⻍", "⻎", "⻏", "⻐", "⻑", "⻒", "⻓", "⻔", "⻕", "⻖", "⻗", "⻘", "⻙", "⻚", "⻛", "⻜", "⻝", "⻞", "⻟", "⻠", "⻡", "⻢", "⻣", "⻤", "⻥", "⻦", "⻧", "⻨", "⻩", "⻪", "⻫", "⻬", "⻭", "⻮", "⻯", "⻰", "⻱", "⻲", "⻳", "⼀", "⼁", "⼂", "⼃", "⼄", "⼅", "⼆", "⼇", "⼈", "⼉", "⼊", "⼋", "⼌", "⼍", "⼎", "⼏", "⼐", "⼑", "⼒", "⼓", "⼔", "⼕", "⼖", "⼗", "⼘", "⼙", "⼚", "⼛", "⼜", "⼝", "⼞", "⼟", "⼠", "⼡", "⼢", "⼣", "⼤", "⼥", "⼦", "⼧", "⼨", "⼩", "⼪", "⼫", "⼬", "⼭", "⼮", "⼯", "⼰", "⼱", "⼲", "⼳", "⼴", "⼵", "⼶", "⼷", "⼸", "⼹", "⼺", "⼻", "⼼", "⼽", "⼾", "⼿", "⽀", "⽁", "⽂", "⽃", "⽄", "⽅", "⽆", "⽇", "⽈", "⽉", "⽊", "⽋", "⽌", "⽍", "⽎", "⽏", "⽐", "⽑", "⽒", "⽓", "⽔", "⽕", "⽖", "⽗", "⽘", "⽙", "⽚", "⽛", "⽜", "⽝", "⽞", "⽟", "⽠", "⽡", "⽢", "⽣", "⽤", "⽥", "⽦", "⽧", "⽨", "⽩", "⽪", "⽫", "⽬", "⽭", "⽮", "⽯", "⽰", "⽱", "⽲", "⽳", "⽴", "⽵", "⽶", "⽷", "⽸", "⽹", "⽺", "⽻", "⽼", "⽽", "⽾", "⽿", "⾀", "⾁", "⾂", "⾃", "⾄", "⾅", "⾆", "⾇", "⾈", "⾉", "⾊", "⾋", "⾌", "⾍", "⾎", "⾏", "⾐", "⾑", "⾒", "⾓", "⾔", "⾕", "⾖", "⾗", "⾘", "⾙", "⾚", "⾛", "⾜", "⾝", "⾞", "⾟", "⾠", "⾡", "⾢", "⾣", "⾤", "⾥", "⾦", "⾧", "⾨", "⾩", "⾪", "⾫", "⾬", "⾭", "⾮", "⾯", "⾰", "⾱", "⾲", "⾳", "⾴", "⾵", "⾶", "⾷", "⾸", "⾹", "⾺", "⾻", "⾼", "⾽", "⾾", "⾿", "⿀", "⿁", "⿂", "⿃", "⿄", "⿅", "⿆", "⿇", "⿈", "⿉", "⿊", "⿋", "⿌", "⿍", "⿎", "⿏", "⿐", "⿑", "⿒", "⿓", "⿔", "⿕"
+    ],
+
+
+	//拡張機能 Bracket Pair Colorizer
+	//行数ラインに印つける
+	"bracketPairColorizer.showBracketsInGutter": true,
+	//対応するBracketをハイライト
+	"bracketPairColorizer.highlightActiveScope": true,
+	//対応するBracketを装飾
+	"bracketPairColorizer.activeScopeCSS": [
+		"borderStyle : solid",
+		"borderWidth : 1px",
+		"borderColor : {#fff}; opacity: 0.5",
+		"backgroundColor : rgba(255,255,255,0.3);"
+	],
+    //拡張機能 Live Server
+	"liveServer.settings.CustomBrowser": "chrome",
+	// "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+	// "liveServer.settings.CustomBrowser": "firefox",
+	// "liveServer.settings.CustomBrowser": "firefox:PrivateMode",
+	// "liveServer.settings.CustomBrowser": "microsoft-edge",
+    "liveServer.settings.donotVerifyTags": true,
+	"liveServer.settings.donotShowInfoMsg": true
+
+}

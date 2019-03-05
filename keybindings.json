@@ -1,0 +1,120 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    { //markdown preview
+        "key": "ctrl+m ctrl+d",
+        "command": "markdown.showPreviewToSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    { //カーソル下に複製
+        "key": "alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    { //カーソル上に複製
+        "key": "alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    { //上へスクロール（マウスホール上下）
+        "key": "ctrl+pageup",
+        "command": "scrollLineUp",
+        "when": "editorTextFocus"
+    },
+    { //下へスクロール（マウスホール上下）
+        "key": "ctrl+pagedown",
+        "command": "scrollLineDown",
+        "when": "textInputFocus"
+    },
+
+    { //開いているファイルタブ右へ移動
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    { //開いているファイルタブ左へ移動
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    { //選択範囲をフォーマット
+        "key": "alt+f alt+f",
+        "command": "editor.action.formatSelection",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+	//Emmet
+	{ //数値を1ずつ増やす
+		"key": "ctrl+up",
+		"command": "editor.emmet.action.incrementNumberByOne"
+	},
+	{ //数値を1ずつ減らす
+		"key": "ctrl+down",
+		"command": "editor.emmet.action.decrementNumberByOne"
+	},
+	{ //数値を10ずつ増やす
+		"key": "ctrl+alt+up",
+		"command": "editor.emmet.action.incrementNumberByTen"
+	},
+	{ //数値を10ずつ減らす
+		"key": "ctrl+alt+down",
+		"command": "editor.emmet.action.decrementNumberByTen"
+	},
+	{ //数値を0.1ずつ増やす
+		"key": "shift+alt+up",
+		"command": "editor.emmet.action.incrementNumberByOneTenth"
+	},
+	{ //数値を0.1ずつ減らす
+		"key": "shift+alt+down",
+		"command": "editor.emmet.action.decrementNumberByOneTenth"
+	},
+	//タスクランナー
+	{ //タスク実行
+		"key": "ctrl+alt+r",
+		"command": "workbench.action.tasks.runTask"
+	},
+	{ //タスク終了
+		"key": "ctrl+alt+q",
+		"command": "workbench.action.tasks.terminate"
+	},
+
+	//デバッグ
+	{ //ステップアウト
+		"key": "ctrl+f11",
+		"command": "workbench.action.debug.stepOut",
+		"when": "inDebugMode"
+	},
+	{ //デバッグコンソールをクリア
+		"key": "ctrl+space ctrl+oem_102",
+		"command": "workbench.debug.panel.action.clearReplAction",
+		"when": "inDebugRepl"
+	},
+	{ //デバッグコンソールビューにカーソル選択
+		"key": "ctrl+oem_102",
+		"command": "workbench.debug.action.focusRepl"
+	},
+
+    //拡張機能
+    { //拡張機能 html tag wrapper
+        "key": "shift+alt+w",
+        "command": "extension.wrapTag",
+        "when": "editorTextFocus"
+    },
+	{ //Live Server起動
+		"key": "ctrl+l ctrl+s",
+		"command": "extension.liveServer.goOnline",
+		"when": "editorTextFocus"
+	},
+	{ //Live Server終了
+		"key": "ctrl+l ctrl+q",
+		"command": "extension.liveServer.goOffline",
+		"when": "editorTextFocus"
+	},
+	{ //Live Server Workspace切替
+		"key": "ctrl+l ctrl+w",
+		"command": "extension.liveServer.changeWorkspace"
+	},
+	{ //ForceCodeMenu表示
+		"key": "alt+f alt+c",
+		"command": "ForceCode.showMenu",
+		"when": "ForceCodeActive && ForceCodeLoggedIn"
+	}
+
+
+]
