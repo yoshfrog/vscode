@@ -15,7 +15,7 @@
         "files.trimTrailingWhitespace": false
     },
     // タグ内の記述はフォーマットしない
-    "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p",
+    "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p, a, i",
     // head, body, /html タグの前に改行を入れない
     "html.format.extraLiners": "",
     // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない

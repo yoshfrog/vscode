@@ -51,6 +51,11 @@
 ### 改行
     Shift + Enter
 
+### インデントをタブに切り替え
+    Ctrl + ] + Tab
+
+### インデントをスペースに切り替え
+    Ctrl + ] + Space
 
 
 ### 検索 次の検索結果にフォーカス
@@ -198,4 +203,4 @@ https://www.nxworld.net/services-resource/vscode-extension-live-server.html
 ### Force Code
 Force Code Menu
 
-	Win : Alt + F + Alt + C
+	Win : Ctrl + Alt + F

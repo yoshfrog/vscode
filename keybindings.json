@@ -111,9 +111,17 @@
 		"command": "extension.liveServer.changeWorkspace"
 	},
 	{ //ForceCodeMenu表示
-		"key": "alt+f alt+c",
+		"key": "ctrl+alt+f",
 		"command": "ForceCode.showMenu",
 		"when": "ForceCodeActive && ForceCodeLoggedIn"
+	},
+	{
+		"key": "ctrl+oem_6 ctrl+space",
+		"command": "editor.action.indentUsingSpaces"
+	},
+	{
+		"key": "ctrl+oem_6 ctrl+tab",
+		"command": "editor.action.indentUsingTabs"
 	}
 
 
