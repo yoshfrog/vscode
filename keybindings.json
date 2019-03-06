@@ -38,7 +38,16 @@
         "key": "alt+f alt+f",
         "command": "editor.action.formatSelection",
         "when": "editorTextFocus && !editorReadonly"
-    },
+	},
+	{ //インデントをスペースに切り替え
+		"key": "ctrl+oem_6 ctrl+space",
+		"command": "editor.action.indentUsingSpaces"
+	},
+	{ //インデントをタブに切り替え
+		"key": "ctrl+oem_6 ctrl+tab",
+		"command": "editor.action.indentUsingTabs"
+	},
+
 	//Emmet
 	{ //数値を1ずつ増やす
 		"key": "ctrl+up",
@@ -114,14 +123,6 @@
 		"key": "ctrl+alt+f",
 		"command": "ForceCode.showMenu",
 		"when": "ForceCodeActive && ForceCodeLoggedIn"
-	},
-	{
-		"key": "ctrl+oem_6 ctrl+space",
-		"command": "editor.action.indentUsingSpaces"
-	},
-	{
-		"key": "ctrl+oem_6 ctrl+tab",
-		"command": "editor.action.indentUsingTabs"
 	}
 
 
