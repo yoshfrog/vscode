@@ -9,7 +9,7 @@
     // ファイルの保存時に末尾を改行
     "files.insertFinalNewline": true,
     // ファイルの保存時に最終行以降をトリミング
-    "files.trimFinalNewlines": true,
+    // "files.trimFinalNewlines": true,
     // Markdown のファイルは行末の空白をトリミングしない
     "[markdown]": {
         "files.trimTrailingWhitespace": false
