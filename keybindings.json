@@ -15,16 +15,36 @@
         "command": "editor.action.insertCursorAbove",
         "when": "editorTextFocus"
     },
-    { //上へスクロール（マウスホール上下）
-        "key": "ctrl+pageup",
+    { //上へスクロール（マウスホール上）
+        "key": "ctrl+alt+pageup",
         "command": "scrollLineUp",
         "when": "editorTextFocus"
     },
-    { //下へスクロール（マウスホール上下）
-        "key": "ctrl+pagedown",
+    { //下へスクロール（マウスホール下）
+        "key": "ctrl+alt+pagedown",
         "command": "scrollLineDown",
         "when": "textInputFocus"
     },
+	{ //上へ1行ずつスクロール
+		"key": "shift+alt+pageup",
+		"command": "scrollPageUp",
+		"when": "textInputFocus"
+	},
+	{ //下へ1行ずつスクロール
+		"key": "shift+alt+pagedown",
+		"command": "scrollPageDown",
+		"when": "textInputFocus"
+	},
+	{ //次のハイライトのシンボルへジャンプ
+		"key": "alt+pagedown",
+		"command": "editor.action.wordHighlight.next",
+		"when": "editorTextFocus && hasWordHighlights"
+	},
+	{ //前のハイライトのシンボルへジャンプ
+		"key": "alt+pageup",
+		"command": "editor.action.wordHighlight.prev",
+		"when": "editorTextFocus && hasWordHighlights"
+	},
 
     { //開いているファイルタブ右へ移動
         "key": "ctrl+tab",

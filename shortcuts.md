@@ -25,7 +25,24 @@
     F1
 	Ctrl + Shift + P
 
+## 表示系
 
+### 上へスクロール（マウスホール上）
+	Ctrl + Alt + PageUp
+
+### 下へスクロール（マウスホール下）
+	Ctrl + Alt + PageDown
+
+### 上へ1行ずつスクロール
+	Shift + Alt + PageUp
+
+### 下へ1行ずつスクロール
+	Shift + Alt + PageDown
+
+### 次のハイライトのシンボルへジャンプ
+	Alt + PageDown
+### 前のハイライトのシンボルへジャンプ
+	Alt + PageUp
 
 ## 操作系
 
