@@ -78,19 +78,19 @@
 		"command": "editor.emmet.action.decrementNumberByOne"
 	},
 	{ //数値を10ずつ増やす
-		"key": "ctrl+alt+up",
+		"key": "shift+alt+up",
 		"command": "editor.emmet.action.incrementNumberByTen"
 	},
 	{ //数値を10ずつ減らす
-		"key": "ctrl+alt+down",
+		"key": "shift+alt+down",
 		"command": "editor.emmet.action.decrementNumberByTen"
 	},
 	{ //数値を0.1ずつ増やす
-		"key": "shift+alt+up",
+		"key": "ctrl+alt+up",
 		"command": "editor.emmet.action.incrementNumberByOneTenth"
 	},
 	{ //数値を0.1ずつ減らす
-		"key": "shift+alt+down",
+		"key": "ctrl+alt+down",
 		"command": "editor.emmet.action.decrementNumberByOneTenth"
 	},
 	//タスクランナー

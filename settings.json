@@ -46,10 +46,9 @@
     // "window.restoreWindows":"none",
     "window.restoreWindows":"folders",
     //アイコン
-    "vsicons.dontShowNewVersionMessage": true,
 
     // ペースト時に自動でフォーマット
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     // ミニマップの非表示
     "editor.minimap.enabled": false,
     // 半角スペースを常に表示
@@ -115,7 +114,6 @@
 
 
     //テーマ
-    "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Monokai Operator Mono",
     "workbench.colorCustomizations": {
         "[Monokai Operator Mono]": {
@@ -194,6 +192,7 @@
 	// "liveServer.settings.CustomBrowser": "firefox:PrivateMode",
 	// "liveServer.settings.CustomBrowser": "microsoft-edge",
     "liveServer.settings.donotVerifyTags": true,
-	"liveServer.settings.donotShowInfoMsg": true
+	"liveServer.settings.donotShowInfoMsg": true,
+	"force.allowAnonymousUsageTracking": true
 
 }
