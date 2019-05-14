@@ -67,7 +67,31 @@
 		"key": "ctrl+oem_6 ctrl+tab",
 		"command": "editor.action.indentUsingTabs"
 	},
+	{ //選択範囲拡張
+		"key": "ctrl+shift+right",
+		"command": "editor.action.smartSelect.expand",
+		"when": "editorTextFocus"
+	},
+	{ //選択範囲拡張
+		"key": "shift+alt+right",
+		"command": "-editor.action.smartSelect.expand",
+		"when": "editorTextFocus"
+	},
+	{ //選択範囲縮小
+		"key": "ctrl+shift+left",
+		"command": "editor.action.smartSelect.shrink",
+		"when": "editorTextFocus"
+	},
+	{ //選択範囲縮小
+		"key": "shift+alt+left",
+		"command": "-editor.action.smartSelect.shrink",
+		"when": "editorTextFocus"
+	},
 
+	{ //階層ファイルパンクズ表示トグル
+		"key": "shift+alt+oem_period",
+		"command": "breadcrumbs.toggle"
+	},
 	//Emmet
 	{ //数値を1ずつ増やす
 		"key": "ctrl+up",
@@ -93,6 +117,19 @@
 		"key": "ctrl+alt+down",
 		"command": "editor.emmet.action.decrementNumberByOneTenth"
 	},
+	{ //開始・閉じタグに移動
+		"key": "ctrl+oem_period",
+		"command": "editor.emmet.action.matchTag"
+	},
+	{ //タグ挿入（単独行）
+		"key": "ctrl+p",
+		"command": "editor.emmet.action.wrapWithAbbreviation"
+	},
+	{ //タグ挿入（複数行選択）
+		"key": "ctrl+shift+p",
+		"command": "editor.emmet.action.wrapIndividualLinesWithAbbreviation"
+	},
+
 	//タスクランナー
 	{ //タスク実行
 		"key": "ctrl+alt+r",
