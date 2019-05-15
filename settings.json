@@ -5,9 +5,9 @@
     "extensions.autoUpdate": true,
 
     // ファイルの保存時に末尾の空白をトリミング
-    "files.trimTrailingWhitespace": true,
+    // "files.trimTrailingWhitespace": true,
     // ファイルの保存時に末尾を改行
-    "files.insertFinalNewline": true,
+    // "files.insertFinalNewline": true,
     // ファイルの保存時に最終行以降をトリミング
     // "files.trimFinalNewlines": true,
     // Markdown のファイルは行末の空白をトリミングしない
@@ -193,5 +193,6 @@
 	// "liveServer.settings.CustomBrowser": "microsoft-edge",
     "liveServer.settings.donotVerifyTags": true,
 	"liveServer.settings.donotShowInfoMsg": true,
-	"force.allowAnonymousUsageTracking": true
+	"force.allowAnonymousUsageTracking": true,
+	"breadcrumbs.enabled": true
 }

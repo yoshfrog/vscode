@@ -68,23 +68,13 @@
 		"command": "editor.action.indentUsingTabs"
 	},
 	{ //選択範囲拡張
-		"key": "ctrl+shift+right",
-		"command": "editor.action.smartSelect.expand",
-		"when": "editorTextFocus"
-	},
-	{ //選択範囲拡張
 		"key": "shift+alt+right",
-		"command": "-editor.action.smartSelect.expand",
-		"when": "editorTextFocus"
-	},
-	{ //選択範囲縮小
-		"key": "ctrl+shift+left",
-		"command": "editor.action.smartSelect.shrink",
+		"command": "editor.action.smartSelect.expand",
 		"when": "editorTextFocus"
 	},
 	{ //選択範囲縮小
 		"key": "shift+alt+left",
-		"command": "-editor.action.smartSelect.shrink",
+		"command": "editor.action.smartSelect.shrink",
 		"when": "editorTextFocus"
 	},
 
