@@ -194,5 +194,6 @@
     "liveServer.settings.donotVerifyTags": true,
 	"liveServer.settings.donotShowInfoMsg": true,
 	"force.allowAnonymousUsageTracking": true,
-	"breadcrumbs.enabled": true
+	"breadcrumbs.enabled": false,
+	"files.autoSave": "afterDelay"
 }
