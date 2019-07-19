@@ -1,4 +1,7 @@
 {
+    // VSCode自動アップデート
+    // "update.channel": "none", //"none"：自動更新しない  "default"：自動更新する
+
     // 拡張機能のおすすめを非表示
     "extensions.ignoreRecommendations": true,
     // 拡張機能を自動更新
@@ -30,6 +33,10 @@
         // "**/.svn": true,
         // "**/.DS_Store": true
     },
+    // ファイルを自動保存
+    "files.autoSave": "afterDelay",
+
+
 
     // ファイルブラウザには表示するが、検索から除外する
     "search.exclude": {
@@ -45,7 +52,6 @@
     // 起動時に前回開いていたワークスペースを開く
     // "window.restoreWindows":"none",
     "window.restoreWindows":"folders",
-    //アイコン
 
     // ペースト時に自動でフォーマット
     "editor.formatOnPaste": false,
@@ -55,16 +61,16 @@
     "editor.renderWhitespace": "all",
     // エディターの幅で折り返し
     "editor.wordWrap": "on",
-	//Ctrl+マウスホイールで拡大縮小
-	"editor.mouseWheelZoom": true,
-	// 行移動時のタグに沿って自動インデント
+    //Ctrl+マウスホイールで拡大縮小
+    "editor.mouseWheelZoom": true,
+    // 行移動時のタグに沿って自動インデント
     "editor.autoIndent": false,
-	// タブのサイズ変更
-	"editor.tabSize": 4,
-	//インデントのデフォルト値 true:スペース, false:タブ
-	"editor.insertSpaces": false,
-	// ファイルを開くと、そのファイルの内容に基づいて `editor.tabSize` と `editor.insertSpaces` が検出されます。
-	"editor.detectIndentation": false,
+    // タブのサイズ変更
+    "editor.tabSize": 4,
+    //インデントのデフォルト値 true:スペース, false:タブ
+    "editor.insertSpaces": false,
+    // ファイルを開くと、そのファイルの内容に基づいて `editor.tabSize` と `editor.insertSpaces` が検出されます。
+    "editor.detectIndentation": false,
     //エディター
     "editor.renderLineHighlight": "gutter",
     // カーソルがにゅるっと点滅する
@@ -77,40 +83,43 @@
     "editor.multiCursorModifier": "ctrlCmd",
 
     // ユーザー定義スニペットを表示しない
-	"editor.snippetSuggestions": "top",
-	//入力候補の初期カーソル位置
-	"editor.suggestSelection": "recentlyUsedByPrefix",
-	//<>を枠で囲う
-	"editor.matchBrackets": false,
-	//入力候補をタブで展開
-	"editor.tabCompletion": "off",
-	//IntelliSenseとEnterで確定
-	"editor.acceptSuggestionOnEnter": "on",
-	// 入力候補 ポップアップ説明文
-	"editor.parameterHints.enabled": false,
-	//エディターでCodeLensを表示するかどうかを制御
-	"editor.codeLens": false,
+    "editor.snippetSuggestions": "top",
+    //入力候補の初期カーソル位置
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    //<>を枠で囲う
+    "editor.matchBrackets": false,
+    //入力候補をタブで展開
+    "editor.tabCompletion": "off",
+    //IntelliSenseとEnterで確定
+    "editor.acceptSuggestionOnEnter": "on",
+    // 入力候補 ポップアップ説明文
+    "editor.parameterHints.enabled": false,
+    //エディターでCodeLensを表示するかどうかを制御
+    "editor.codeLens": false,
 
-	//入力候補表示非表示
-	// "editor.quickSuggestions": false,
-	// "editor.quickSuggestions": {
-	// 	"comments": false, // コメント内では無効
-	// 	"strings": true, // 文字列内では有効
-	// 	"other": false //  その他の場所で有効
-	// },
+    //入力候補表示非表示
+    // "editor.quickSuggestions": false,
+    // "editor.quickSuggestions": {
+    // 	"comments": false, // コメント内では無効
+    // 	"strings": true, // 文字列内では有効
+    // 	"other": false //  その他の場所で有効
+    // },
 
-	//trueの場合 editor.snippetSuggestions の場所に入力候補のsnippetを表示する
-	"emmet.showSuggestionsAsSnippets": true,
+    //階層リンクの有効/無効
+    "breadcrumbs.enabled": false,
 
-	// 差分を横に並べて表示ではなく行内に表示する
-	"diffEditor.renderSideBySide": false,
+    //trueの場合 editor.snippetSuggestions の場所に入力候補のsnippetを表示する
+    "emmet.showSuggestionsAsSnippets": true,
+
+    // 差分を横に並べて表示ではなく行内に表示する
+    "diffEditor.renderSideBySide": false,
 
     //起動時の初期画面設定 新規ファイル
     "workbench.startupEditor": "newUntitledFile",
     //タブの幅制御
     "workbench.editor.tabSizing": "shrink",
 
-	"workbench.editor.showTabs": true,
+    "workbench.editor.showTabs": true,
 
 
     //テーマ
@@ -173,27 +182,25 @@
     ],
 
 
-	//拡張機能 Bracket Pair Colorizer
-	//行数ラインに印つける
-	"bracketPairColorizer.showBracketsInGutter": true,
-	//対応するBracketをハイライト
-	"bracketPairColorizer.highlightActiveScope": true,
-	//対応するBracketを装飾
-	"bracketPairColorizer.activeScopeCSS": [
-		"borderStyle : solid",
-		"borderWidth : 1px",
-		"borderColor : {#fff}; opacity: 0.5",
-		"backgroundColor : rgba(255,255,255,0.3);"
-	],
+    //拡張機能 Bracket Pair Colorizer
+    //行数ラインに印つける
+    "bracketPairColorizer.showBracketsInGutter": true,
+    //対応するBracketをハイライト
+    "bracketPairColorizer.highlightActiveScope": true,
+    //対応するBracketを装飾
+    "bracketPairColorizer.activeScopeCSS": [
+      "borderStyle : solid",
+      "borderWidth : 1px",
+      "borderColor : {#fff}; opacity: 0.5",
+      "backgroundColor : rgba(255,255,255,0.3);"
+    ],
     //拡張機能 Live Server
-	"liveServer.settings.CustomBrowser": "chrome",
-	// "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
-	// "liveServer.settings.CustomBrowser": "firefox",
-	// "liveServer.settings.CustomBrowser": "firefox:PrivateMode",
-	// "liveServer.settings.CustomBrowser": "microsoft-edge",
+    "liveServer.settings.CustomBrowser": "chrome",
+    // "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+    // "liveServer.settings.CustomBrowser": "firefox",
+    // "liveServer.settings.CustomBrowser": "firefox:PrivateMode",
+    // "liveServer.settings.CustomBrowser": "microsoft-edge",
     "liveServer.settings.donotVerifyTags": true,
-	"liveServer.settings.donotShowInfoMsg": true,
-	"force.allowAnonymousUsageTracking": true,
-	"breadcrumbs.enabled": false,
-	"files.autoSave": "afterDelay"
+    "liveServer.settings.donotShowInfoMsg": true
+
 }
