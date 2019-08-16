@@ -45,3 +45,4 @@ C:\Users\Username\.vscode\extensions\bierner.markdown-preview-github-styles-0.1.
 - https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-visualforce
 - https://marketplace.visualstudio.com/items?itemName=JohnAaronNelson.visualforce
 - https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
+- https://marketplace.visualstudio.com/items?itemName=spook.easysass
