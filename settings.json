@@ -34,7 +34,7 @@
         // "**/.DS_Store": true
     },
     // ファイルを自動保存
-    "files.autoSave": "afterDelay",
+    // "files.autoSave": "afterDelay",
 
 
 
@@ -50,8 +50,8 @@
     //Windows拡大率
     "window.zoomLevel": 0,
     // 起動時に前回開いていたワークスペースを開く
-    // "window.restoreWindows":"none",
-    "window.restoreWindows":"folders",
+    "window.restoreWindows":"none",
+    // "window.restoreWindows":"folders",
 
     // ペースト時に自動でフォーマット
     "editor.formatOnPaste": false,
@@ -194,6 +194,27 @@
       "borderColor : {#fff}; opacity: 0.5",
       "backgroundColor : rgba(255,255,255,0.3);"
     ],
+
+    //拡張機能 Easy Sass
+    // 保存と同時にコンパイル
+    "easysass.compileAfterSave": true,  //有効：true 無効：false
+    // CSSを出力させるディレクトリ
+    // ワークススペースのルートが起点
+    "easysass.targetDir": "./css",
+    // アンダーバー付きパーシャルファイルはコンパイルしない
+    "easysass.excludeRegex": "^_+",
+    // CSSのフォーマット
+    "easysass.formats": [
+      {
+        "format": "expanded",
+        "extension": ".css"
+      },
+      {
+        "format": "compressed",
+        "extension": ".min.css"
+      }
+    ],
+
     //拡張機能 Live Server
     "liveServer.settings.CustomBrowser": "chrome",
     // "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
