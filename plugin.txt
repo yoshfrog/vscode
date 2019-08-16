@@ -18,3 +18,4 @@ https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybinding
 https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
 https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
 https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint
+https://marketplace.visualstudio.com/items?itemName=spook.easysass
