@@ -9,6 +9,9 @@ VSCode customize settings
 **Win**  
 C:\Users\Username\AppData\Roaming\Code\User\
 
+**Mac**  
+/ユーザ/Xxxxxx/ライブラリ/Application Support/Code/User/
+
 ## 拡張機能 カスタマイズ
 - github-markdown.css  
 
@@ -46,3 +49,7 @@ C:\Users\Username\.vscode\extensions\bierner.markdown-preview-github-styles-0.1.
 - https://marketplace.visualstudio.com/items?itemName=JohnAaronNelson.visualforce
 - https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
 - https://marketplace.visualstudio.com/items?itemName=spook.easysass
+- https://marketplace.visualstudio.com/items?itemName=brapifra.phpserver
+- https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag
+- https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+- https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer

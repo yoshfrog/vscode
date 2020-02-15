@@ -46,8 +46,39 @@
     "**/tmp/cache": true
   },
 
+  //Lang属性：ja
+  "emmet.variables": {
+    "lang" : "ja"
+  },
+
+  //Emmet有効化にする言語
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "vue-html": "html"
+  },
+
+  //閉じ（開始）タグのID.Class付きコメント
+  //デフォルト：閉じタグの1行後にID.Class付きコメントを追加
+  "emmet.syntaxProfiles": {
+    "html": {
+      "filters": "html,c"
+    },
+  },
+  //デフォルト仕様の場合はemmet.preferencesは設定不要
+  "emmet.preferences": {
+    //閉じタグと同じ行に追加
+    "filter.commentAfter": "<!-- /[#ID][.CLASS] -->"
+
+    //開始タグの1行前、閉じタグの1行後に追加
+    // "filter.commentBefore": "<!-- start [#ID][.CLASS] -->\n",
+    // "filter.commentAfter": "\n<!-- end [#ID][.CLASS] -->"
+  },
+
   //trueの場合 editor.snippetSuggestions の場所に入力候補のsnippetを表示する
   "emmet.showSuggestionsAsSnippets": true,
+
+  // emmet cssスニペット
+  "emmet.extensionsPath": "~/Library/Application Support/Code/User/snippets/",
 
   // 差分を横に並べて表示ではなく行内に表示する
   "diffEditor.renderSideBySide": false,
@@ -73,14 +104,14 @@
   //Ctrl+マウスホイールで拡大縮小
   "editor.mouseWheelZoom": true,
   // 行移動時のタグに沿って自動インデント
-  "editor.autoIndent": "none",
+  "editor.autoIndent": "keep",
   // タブのサイズ変更
   "editor.tabSize": 2,
   //インデントのデフォルト値 true:スペース, false:タブ
   "editor.insertSpaces": true,
   // ファイルを開くと、そのファイルの内容に基づいて `editor.tabSize` と `editor.insertSpaces` が検出されます。
   "editor.detectIndentation": false,
-  //エディター
+  // カーソルのある行（単語）をハイライト
   "editor.renderLineHighlight": "gutter",
   // カーソルがにゅるっと点滅する
   "editor.cursorBlinking": "smooth",
@@ -96,7 +127,7 @@
   //入力候補の初期カーソル位置
   "editor.suggestSelection": "recentlyUsedByPrefix",
   //<>を枠で囲う
-  "editor.matchBrackets": "always",
+  "editor.matchBrackets": "never",
   //入力候補をタブで展開
   "editor.tabCompletion": "off",
   //IntelliSenseとEnterで確定
@@ -164,8 +195,8 @@
       // "editor.selectionBackground": "#203d63",
       "editor.selectionBackground": "#264977",
       // "editor.selectionHighlightBackground": "#3B3A32",
-      "editor.selectionHighlightBackground": "#414339",
-      // "editor.selectionHighlightBackground": "#3c5996",
+      // "editor.selectionHighlightBackground": "#414339",
+      "editor.selectionHighlightBackground": "#3c5996",
       "editor.findMatchBackground":"#6C46B3",
       "editor.findMatchHighlightBackground":"#6C46B3",
 
@@ -215,7 +246,6 @@
     "Ⅰ", "Ⅱ", "Ⅲ", "Ⅳ", "Ⅴ", "Ⅵ", "Ⅶ", "Ⅷ", "Ⅸ", "Ⅹ", "ⅰ", "ⅱ", "ⅲ", "ⅳ", "ⅴ", "ⅵ", "ⅶ", "ⅷ", "ⅸ", "ⅹ", "①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩", "⑪", "⑫", "⑬", "⑭", "⑮", "⑯", "⑰", "⑱", "⑲", "⑳", "㊤", "㊥", "㊦", "㊧", "㊨", "㍉", "㍍", "㌔", "㌘", "㌧", "㌦", "㍑", "㌫", "㌢", "㎝", "㎏", "㎡", "㏍", "℡", "№", "㍻", "㍼", "㍽", "㍾", "㈱", "㈲", "㈹", "〜", "—", "⺀", "⺁", "⺂", "⺃", "⺄", "⺅", "⺆", "⺇", "⺈", "⺉", "⺊", "⺋", "⺌", "⺍", "⺎", "⺏", "⺐", "⺑", "⺒", "⺓", "⺔", "⺕", "⺖", "⺗", "⺘", "⺙", "⺚", "⺛", "⺜", "⺝", "⺞", "⺟", "⺠", "⺡", "⺢", "⺣", "⺤", "⺥", "⺦", "⺧", "⺨", "⺩", "⺪", "⺫", "⺬", "⺭", "⺮", "⺯", "⺰", "⺱", "⺲", "⺳", "⺴", "⺵", "⺶", "⺷", "⺸", "⺹", "⺺", "⺻", "⺼", "⺽", "⺾", "⺿", "⻀", "⻁", "⻂", "⻃", "⻄", "⻅", "⻆", "⻇", "⻈", "⻉", "⻊", "⻋", "⻌", "⻍", "⻎", "⻏", "⻐", "⻑", "⻒", "⻓", "⻔", "⻕", "⻖", "⻗", "⻘", "⻙", "⻚", "⻛", "⻜", "⻝", "⻞", "⻟", "⻠", "⻡", "⻢", "⻣", "⻤", "⻥", "⻦", "⻧", "⻨", "⻩", "⻪", "⻫", "⻬", "⻭", "⻮", "⻯", "⻰", "⻱", "⻲", "⻳", "⼀", "⼁", "⼂", "⼃", "⼄", "⼅", "⼆", "⼇", "⼈", "⼉", "⼊", "⼋", "⼌", "⼍", "⼎", "⼏", "⼐", "⼑", "⼒", "⼓", "⼔", "⼕", "⼖", "⼗", "⼘", "⼙", "⼚", "⼛", "⼜", "⼝", "⼞", "⼟", "⼠", "⼡", "⼢", "⼣", "⼤", "⼥", "⼦", "⼧", "⼨", "⼩", "⼪", "⼫", "⼬", "⼭", "⼮", "⼯", "⼰", "⼱", "⼲", "⼳", "⼴", "⼵", "⼶", "⼷", "⼸", "⼹", "⼺", "⼻", "⼼", "⼽", "⼾", "⼿", "⽀", "⽁", "⽂", "⽃", "⽄", "⽅", "⽆", "⽇", "⽈", "⽉", "⽊", "⽋", "⽌", "⽍", "⽎", "⽏", "⽐", "⽑", "⽒", "⽓", "⽔", "⽕", "⽖", "⽗", "⽘", "⽙", "⽚", "⽛", "⽜", "⽝", "⽞", "⽟", "⽠", "⽡", "⽢", "⽣", "⽤", "⽥", "⽦", "⽧", "⽨", "⽩", "⽪", "⽫", "⽬", "⽭", "⽮", "⽯", "⽰", "⽱", "⽲", "⽳", "⽴", "⽵", "⽶", "⽷", "⽸", "⽹", "⽺", "⽻", "⽼", "⽽", "⽾", "⽿", "⾀", "⾁", "⾂", "⾃", "⾄", "⾅", "⾆", "⾇", "⾈", "⾉", "⾊", "⾋", "⾌", "⾍", "⾎", "⾏", "⾐", "⾑", "⾒", "⾓", "⾔", "⾕", "⾖", "⾗", "⾘", "⾙", "⾚", "⾛", "⾜", "⾝", "⾞", "⾟", "⾠", "⾡", "⾢", "⾣", "⾤", "⾥", "⾦", "⾧", "⾨", "⾩", "⾪", "⾫", "⾬", "⾭", "⾮", "⾯", "⾰", "⾱", "⾲", "⾳", "⾴", "⾵", "⾶", "⾷", "⾸", "⾹", "⾺", "⾻", "⾼", "⾽", "⾾", "⾿", "⿀", "⿁", "⿂", "⿃", "⿄", "⿅", "⿆", "⿇", "⿈", "⿉", "⿊", "⿋", "⿌", "⿍", "⿎", "⿏", "⿐", "⿑", "⿒", "⿓", "⿔", "⿕"
   ],
 
-
   //拡張機能 Bracket Pair Colorizer
   //行数ラインに印つける
   "bracketPairColorizer.showBracketsInGutter": true,
@@ -225,8 +255,33 @@
   "bracketPairColorizer.activeScopeCSS": [
     "borderStyle : solid",
     "borderWidth : 1px",
-    "borderColor : {#fff}; opacity: 0.5",
+    "borderColor : {#fff}; opacity: 0.8",
     "backgroundColor : rgba(255,255,255,0.3);"
+  ],
+
+  //拡張機能 Highlight Matching Tag
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "highlight": "#674196",
+        "underline": "#ffff33"
+      }
+    },
+    "closing": {
+      "name": {
+        "highlight": "#674196",
+        "underline": "#ffff33"
+      }
+    }
+  },
+
+  // 拡張機能 Autoprefixer
+  "autoprefixer.browsers": [
+    "> 1%",
+    "last 2 versions",
+    // "Firefox ESR",
+    // "ie 10",
+    "ie 11"
   ],
 
   //拡張機能 Easy Sass

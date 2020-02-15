@@ -108,8 +108,12 @@
 		"command": "editor.emmet.action.decrementNumberByOneTenth"
 	},
 	{ //開始・閉じタグに移動
-		"key": "ctrl+oem_period",
+		"key": "ctrl+oem_period", //ctrl .
 		"command": "editor.emmet.action.matchTag"
+	},
+	{ //選択中のタグを範囲選択
+		"key": "cmd+[Quote]",    //ctrl :
+		"command": "editor.emmet.action.balanceOut"
 	},
 	{ //タグ挿入（単独行）
 		"key": "ctrl+p",
