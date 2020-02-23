@@ -52,3 +52,4 @@ C:\Users\Username\.vscode\extensions\bierner.markdown-preview-github-styles-0.1.
 - https://marketplace.visualstudio.com/items?itemName=brapifra.phpserver
 - https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag
 - https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+- https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass
