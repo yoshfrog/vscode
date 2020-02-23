@@ -274,19 +274,24 @@
 
 
   // 拡張機能 Live Sass Compiler
-  "liveSassCompile.settings.formats": [ //Sassの出力内容の設定
+  "liveSassCompile.settings.formats": [
     {
-      "format": "expanded", //nested、compact、compressedのどれかを選ぶ
-      "extensionName": ".css", //style.cssとして出力
-      "savePath": "/css" //cssフォルダの中にstyle.cssを出力
+      "format": "expanded",     //nested、compact、compressed
+      "extensionName": ".css",  //style.cssとして出力
+      "savePath": "./"         //同フォルダに出力
+      // "savePath": "./css"    //cssフォルダに出力
     }
   ],
-  "liveSassCompile.settings.excludeList": [ //対象外とするフォルダを指定
+  //sourcemap: ture, false
+  "liveSassCompile.settings.generateMap": true,
+  //コンパイル対象外フォルダ
+  "liveSassCompile.settings.excludeList": [
     "**/node_modules/**",
     ".vscode/**",
     ".history/**"
   ],
-  "liveSassCompile.settings.autoprefix": [ //ベンダープレフィックスの指定
+  //ベンダープレフィックスの指定
+  "liveSassCompile.settings.autoprefix": [
     "last 2 versions", //最新のブラウザ２バージョンまで
     "Android >= 4.4", //Andoroid４以上
     // "ios_saf >= 8", //iosのsafari８以上
