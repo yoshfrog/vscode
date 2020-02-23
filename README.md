@@ -10,7 +10,13 @@ VSCode customize settings
 C:\Users\Username\AppData\Roaming\Code\User\
 
 **Mac**  
-/ユーザ/Xxxxxx/ライブラリ/Application Support/Code/User/
+/Users/ユーザー名/Library/Application Support/Code/User/
+
+## 拡張機能 格納場所
+**Win**  
+
+**Mac**  
+/Users/ユーザー名/.vscode/extensions/
 
 ## 拡張機能 カスタマイズ
 - github-markdown.css  
@@ -21,35 +27,66 @@ C:\Users\Username\.vscode\extensions\bierner.markdown-preview-github-styles-0.1.
 
 ## 拡張機能（使用中）
 
-- https://marketplace.visualstudio.com/items?itemName=officerhalf.alloy-theme
-- https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-apex
-- https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
-- https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
-- https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer
-- https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
-- https://marketplace.visualstudio.com/items?itemName=saikou9901.evilinspector
-- https://marketplace.visualstudio.com/items?itemName=JohnAaronNelson.ForceCode
-- https://marketplace.visualstudio.com/items?itemName=hwencc.html-tag-wrapper
-- https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint
-- https://marketplace.visualstudio.com/items?itemName=1natsu.insert-br-tag
-- https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion
-- https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja
-- https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
-- https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
-- https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles
-- https://marketplace.visualstudio.com/items?itemName=markfknight.monokai-operator-theme
-- https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete
-- https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
-- https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-core
-- https://marketplace.visualstudio.com/items?itemName=tomoki1207.selectline-statusbar
-- https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings
-- https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
-- https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
-- https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-visualforce
-- https://marketplace.visualstudio.com/items?itemName=JohnAaronNelson.visualforce
-- https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
-- https://marketplace.visualstudio.com/items?itemName=spook.easysass
-- https://marketplace.visualstudio.com/items?itemName=brapifra.phpserver
-- https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag
-- https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
-- https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass
+- Auto Close Tag<br>
+  https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
+- Auto Rename Tag<br>
+  https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+- Bracket Pair Colorizer<br>
+  https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer
+- Color Highlight<br>
+  https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
+- CSS Flexbox Cheatsheet<br>
+  https://marketplace.visualstudio.com/items?itemName=dzhavat.css-flexbox-cheatsheet
+- CSS Peek<br>
+  https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+- CSScomb<br>
+  https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-csscomb
+- EvilInspector<br>
+  https://marketplace.visualstudio.com/items?itemName=saikou9901.evilinspector
+- Github Markdown Preview<br>
+  https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview
+- Highlight Matching Tag<br>
+  https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag
+- html tag wrapper<br>
+  https://marketplace.visualstudio.com/items?itemName=hwencc.html-tag-wrapper
+- Insert ＜br＞ Tag<br>
+  https://marketplace.visualstudio.com/items?itemName=1natsu.insert-br-tag
+- IntelliSense for CSS class names in HTML<br>
+  https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion
+- Japanese Language Pack for Visual Studio Code<br>
+  https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja
+- Live Sass Compiler<br>
+  https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass
+- Live Server<br>
+  https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+- Markdown All in One<br>
+  https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+- Markdown Preview Github Styling<br>
+  https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles
+- Monokai Operator<br>
+  https://marketplace.visualstudio.com/items?itemName=markfknight.monokai-operator-theme
+- One Monokai Theme<br>
+  https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai
+- Path Autocomplete<br>
+  https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete
+- Path Intellisense<br>
+  https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
+- PHP Server<br>
+  https://marketplace.visualstudio.com/items?itemName=brapifra.phpserver
+- Rainbow Brackets<br>
+  https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets
+- Select Line Status Bar<br>
+  https://marketplace.visualstudio.com/items?itemName=tomoki1207.selectline-statusbar
+- Sublime Text Keymap and Settings Importer<br>
+  https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings
+- TODO Highlight<br>
+  https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
+- Trailing Spaces<br>
+  https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
+- vscode-icons<br>
+  https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
+
+
+
+
+å
