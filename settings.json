@@ -34,7 +34,7 @@
     // "**/.DS_Store": true
   },
   // ファイルを自動保存
-  // "files.autoSave": "afterDelay",
+  "files.autoSave": "off",
 
 
   // ファイルブラウザには表示するが、検索から除外する
@@ -77,9 +77,6 @@
   //trueの場合 editor.snippetSuggestions の場所に入力候補のsnippetを表示する
   "emmet.showSuggestionsAsSnippets": true,
 
-  // emmet cssスニペット
-  "emmet.extensionsPath": "~/Library/Application Support/Code/User/snippets/",
-
   // 差分を横に並べて表示ではなく行内に表示する
   "diffEditor.renderSideBySide": false,
 
@@ -90,8 +87,8 @@
   //Windows拡大率
   "window.zoomLevel": 0,
   // 起動時に前回開いていたワークスペースを開く
-  "window.restoreWindows":"none",
-  // "window.restoreWindows":"folders",
+  // "window.restoreWindows":"none",
+  "window.restoreWindows":"folders",
 
   // ペースト時に自動でフォーマット
   "editor.formatOnPaste": false,
@@ -275,34 +272,28 @@
     }
   },
 
-  // 拡張機能 Autoprefixer
-  "autoprefixer.browsers": [
-    "> 1%",
-    "last 2 versions",
-    // "Firefox ESR",
-    // "ie 10",
-    "ie 11"
-  ],
 
-  //拡張機能 Easy Sass
-  // 保存と同時にコンパイル
-  "easysass.compileAfterSave": true,  //有効：true 無効：false
-  // CSSを出力させるディレクトリ
-  // ワークススペースのルートが起点
-  "easysass.targetDir": "./css",
-  // アンダーバー付きパーシャルファイルはコンパイルしない
-  "easysass.excludeRegex": "^_+",
-  // CSSのフォーマット
-  "easysass.formats": [
-    // {
-    //   "format": "compressed",
-    //   "extension": ".min.css"
-    // },
+  // 拡張機能 Live Sass Compiler
+  "liveSassCompile.settings.formats": [ //Sassの出力内容の設定
     {
-      "format": "expanded",
-      "extension": ".css"
+      "format": "expanded", //nested、compact、compressedのどれかを選ぶ
+      "extensionName": ".css", //style.cssとして出力
+      "savePath": "/css" //cssフォルダの中にstyle.cssを出力
     }
   ],
+  "liveSassCompile.settings.excludeList": [ //対象外とするフォルダを指定
+    "**/node_modules/**",
+    ".vscode/**",
+    ".history/**"
+  ],
+  "liveSassCompile.settings.autoprefix": [ //ベンダープレフィックスの指定
+    "last 2 versions", //最新のブラウザ２バージョンまで
+    "Android >= 4.4", //Andoroid４以上
+    // "ios_saf >= 8", //iosのsafari８以上
+    "ie >= 11" //ie11以上
+  ],
+
+
 
   //拡張機能 Live Server
   "liveServer.settings.CustomBrowser": "chrome",
