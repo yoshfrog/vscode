@@ -278,12 +278,14 @@
     {
       "format": "expanded",     //nested、compact、compressed
       "extensionName": ".css",  //style.cssとして出力
-      "savePath": "./"         //同フォルダに出力
-      // "savePath": "./css"    //cssフォルダに出力
+      // "savePath": "./"         //同フォルダに出力
+      "savePath": "./css"    //cssフォルダに出力
     }
   ],
   //sourcemap: ture, false
   "liveSassCompile.settings.generateMap": true,
+  // "liveSassCompile.settings.generateMap": false,
+
   //コンパイル対象外フォルダ
   "liveSassCompile.settings.excludeList": [
     "**/node_modules/**",
@@ -307,6 +309,17 @@
   // "liveServer.settings.CustomBrowser": "firefox:PrivateMode",
   // "liveServer.settings.CustomBrowser": "microsoft-edge",
   "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  //indent Rainbow
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.06)",
+    "rgba(127,255,127,0.06)",
+    "rgba(255,127,255,0.13)",
+    "rgba(79,236,236,0.06)"
+  ],
+  "indentRainbow.errorColor": "rgba(128,32,32,0.6)"
+
+
 
 }

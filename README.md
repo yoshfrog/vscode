@@ -83,8 +83,13 @@ C:\Users\Username\.vscode\extensions\bierner.markdown-preview-github-styles-0.1.
   https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
 - Trailing Spaces<br>
   https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
-- vscode-icons<br>
-  https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
+- Material Icon Themes<br>
+  https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+- indent-rainbow<br>
+  https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
+- Vetur<br>
+  https://marketplace.visualstudio.com/items?itemName=octref.vetur
+
 
 
 
